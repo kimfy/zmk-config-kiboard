@@ -26,12 +26,11 @@
         compatible = "zmk,kscan-gpio-direct";
         label = "KSCAN";
         input-gpios
-        = 
-        , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Q
+        = <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Q
         , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // P
         , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // O
         , <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // U
-          <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Y
+        , <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Y
         
         , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // LAYER SWITCH
         , <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // L
