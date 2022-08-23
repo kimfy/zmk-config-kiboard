@@ -2,6 +2,10 @@
 
 &default_transform {
 
-  col-offset = <0>;
+    col-offset = <0>;
 
 };
+
+&kscan0 {
+    diode_direction = "col2row";
+}
