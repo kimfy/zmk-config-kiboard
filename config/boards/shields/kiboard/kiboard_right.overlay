@@ -2,4 +2,5 @@
 
 &default_transform {
     col-offset = <17>;
+    diode-direction = "col2row";
 };
