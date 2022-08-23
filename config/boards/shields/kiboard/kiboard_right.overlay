@@ -7,5 +7,5 @@
 };
 
 &kscan0 {
-    diode_direction = "col2row";
+    diode-direction = "col2row";
 };
