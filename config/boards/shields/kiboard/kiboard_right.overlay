@@ -9,11 +9,11 @@
 &kscan0 {
     input-gpios
     = 
-      <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // T 
-    , <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // R
-    , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // E
-    , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // W
     , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // Q
+    , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // W
+    , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // E
+    , <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // R
+    , <&pro_micro 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // T 
     
     , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // G
     , <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // F
