@@ -2,5 +2,8 @@
 
 &default_transform {
     col-offset = <17>;
+};
+
+kscan0: kscan {
     diode-direction = "col2row";
 };
