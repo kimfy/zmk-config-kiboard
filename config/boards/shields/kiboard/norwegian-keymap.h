@@ -5,6 +5,5 @@
  */
 
 #define NB_AT RA(NUMBER_2)       // @
-#define NB_LBRC N9     // (
-#define NB_RBRC N8     // )
-
+#define NB_LBRC LS(NUMBER_8)     // (
+#define NB_RBRC LS(NUMBER_9)     // )
