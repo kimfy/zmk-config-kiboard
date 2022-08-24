@@ -14,8 +14,7 @@
 
 #define NB_PRCNT LS(N5)    // %
 #define NB_DLLR  RA(N4)    // $
-#define NB_CARET LS(N6)    // ^
+#define NB_CARET LS(RBKT)  // ^
 #define NB_TILDE LS(GRAVE) // ~
 #define NB_GRAVE PIPE      // `
 #define NB_PIPE LS(BSLH)   // |
-
