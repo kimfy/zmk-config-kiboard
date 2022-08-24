@@ -52,7 +52,7 @@
 	&kp Q &kp W &kp E &kp R &kp T                             &kp Y  &kp U        &kp I       &kp O   &kp P   
 	&kp A &kp S &hm LMETA D &hm LCTRL F &kp G                 &kp H  &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
 	&kp Z &kp X &kp C &kp V &kp B                             &kp N  &kp M        &kp COMMA   &kp DOT &kp FSLH
-	                 &hm LC(LS(LALT)) SPC &kp LSHIFT    &to SYMBOLS &kp RET
+	                 &hm LC(LS(LALT)) SPACE &kp LSHIFT    &to SYMBOLS &kp RET
 			>;
 		};
 
@@ -61,7 +61,7 @@
 	&kp ESC   &kp AT    &kp LBRC &kp RBRC &kp PIPE                        &kp SQT       &kp BSLH        &kp EQUAL  &kp QMARK &kp P   
 	&kp TAB   &kp DLLR  &kp LPAR &kp RPAR &kp GRAVE                       &kp ASTERISK  &hm LCTRL SLASH &hm LS DQT &kp BSPC  &mo SYMBOLS2
 	&kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE                       &kp PLUS      &kp HASH        &kp COMMA  &kp SEMI  &kp UNDER
-	                             &hm LC(LS(LALT)) SPC &to DEFAULT    &to NUMBERS &kp LMETA
+	                             &hm LC(LS(LALT)) SPACE &to DEFAULT    &to NUMBERS &kp LMETA
 			>;
     };
 	};
