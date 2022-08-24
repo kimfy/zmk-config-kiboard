@@ -61,7 +61,7 @@
 	&kp ESC   &kp AT    &kp LBRC &kp RBRC &kp PIPE                        &kp SQT       &kp BSLH        &kp EQUAL  &kp QMARK &kp P   
 	&kp TAB   &kp DLLR  &kp LPAR &kp RPAR &kp GRAVE                       &kp ASTERISK  &hm LCTRL SLASH &hm LS DQT &kp BSPC  &mo SYMBOLS2
 	&kp PRCNT &kp CARET &kp LBKT &kp RBKT &kp TILDE                       &kp PLUS      &kp HASH        &kp COMMA  &kp SEMI  &kp UNDER
-	                             &hm LC(LS(LALT)) SPC  &to DEFAULT    &to NUMBERS &kp LMETA
+	                             &hm LC(LS(LALT)) SPC &to DEFAULT    &to NUMBERS &kp LMETA
 			>;
     };
 	};
