@@ -4,7 +4,7 @@
  * the key you want to re-map. Whatever is output is what you need to remap.
  */
 
-#define NB_AT N2       // @
+#define NB_AT RA(2)       // @
 #define NB_LBRC N9     // (
 #define NB_RBRC N8     // )
 
