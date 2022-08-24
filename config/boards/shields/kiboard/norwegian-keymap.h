@@ -9,8 +9,8 @@
 #define NB_RBRC RA(N0)     // }
 #define NB_LPAR LS(N8)     // (
 #define NB_RPAR LS(N9)     // )
-#define NB_LPAR RA(N8)     // [
-#define NB_RPAR RA(N9)     // ]
+#define NB_LBKT RA(N8)     // [
+#define NB_RBKT RA(N9)     // ]
 
 #define NB_PRCNT LS(N5)    // %
 #define NB_DLLR  RA(N4)    // $
