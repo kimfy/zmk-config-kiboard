@@ -8,12 +8,14 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define SYMBOLS 1
 #define NUMBERS 2
 #define NAVIGATION 3
 #define SYMBOLS2 4
+#define BT 5
 
 // Helpers
 #define MEH LC(LS(LALT))
@@ -82,7 +84,7 @@
 	&none  &none  &kp LC(RIGHT_ARROW) &none         &none                      &none          &none          &none        &none           &none
 	&kp A  &kp S  &kp LPAR            &kp RPAR      &kp G                      &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &mo SYMBOLS2
 	&none  &none  &none               &none         &kp LC(LEFT_ARROW)         &none          &none          &none        &none           &none
-	                                  &hm MEH SPACE &to DEFAULT                &to NUMBERS    &kp BSLH
+	                                  &hm MEH SPACE &to DEFAULT                &to BT         &kp BSLH
 			>;
     };
 
@@ -91,7 +93,16 @@
 	&kp ESC       &kp EXCL         &kp RA(Z) &none          &none              &none       &none     &none &kp RA(L) &none   
 	&kp RA(W)     &kp AMPS         &none     &none          &none              &none       &none     &none &none     &none
 	&kp LESS_THAN &kp GREATER_THAN &none     &none          &none              &none       &none     &none &none     &none
-	                                         &hm MEH SPACE  &to LSHIFT         &to NUMBERS &kp LMETA
+	                                         &hm MEH SPACE  &to LSHIFT         &to BT &kp LMETA
+			>;
+	};
+
+    bt_layer {
+			bindings = <
+	&none     &none         &none     &none      &none              &bt BT_CLR  &none     &none   &none     &none   
+	&none     &none         &none     &none      &none              &none       &none     &none   &none     &none
+	&none     &none         &none     &none      &none              &none       &none     &none   &none     &none
+	                                  &none      &to DEFAULT        &to NUMBERS &none
 			>;
 	};
 	};
