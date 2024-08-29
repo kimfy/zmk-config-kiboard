@@ -17,6 +17,6 @@ include:
     shield: kiboard_left
   - board: nice_nano_v2
     shield: kiboard_right
-#  - board: nice_nano_v2
-#    shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
 
