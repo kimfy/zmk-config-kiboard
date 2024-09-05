@@ -48,7 +48,7 @@
   // Docs: https://zmk.dev/docs/keymaps/behaviors/layers#layer-tap
   &lt {
     tapping-term-ms = <220>;
-  }
+  };
 
 	keymap {
 		compatible = "zmk,keymap";
