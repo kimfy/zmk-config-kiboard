@@ -14,11 +14,18 @@
 #define SYMBOLS 1
 #define NUMBERS 2
 #define NAVIGATION 3
+#define NAV 3
 #define SYMBOLS2 4
 #define BT 5
 
 // Helpers
 #define MEH LC(LS(LALT))
+
+// Layer-tap: The "layer-tap" behavior enables a layer when a key is held, and outputs a keypress when the key is only tapped for a short time.
+// Docs: https://zmk.dev/docs/keymaps/behaviors/layers#layer-tap
+&lt {
+  tapping-term-ms = <200>;
+};
 
 / {
 	behaviors {
@@ -54,10 +61,10 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 			bindings = <
-	&kp Q &kp W &kp E       &kp R         &kp T                 &kp Y       &kp U        &kp I       &kp O   &kp P   
-	&kp A &kp S &hm LMETA D &hm LCTRL F   &kp G                 &kp H       &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
-	&kp Z &kp X &kp C       &kp V         &kp B                 &kp N       &kp M        &kp COMMA   &kp DOT &kp MINUS
-	                        &hm MEH SPACE &kp LSHIFT            &to SYMBOLS &kp RET
+	&kp Q     &kp W &kp E       &kp R         &kp T                 &kp Y       &kp U        &kp I       &kp O   &kp P   
+	&lt NAV A &kp S &hm LMETA D &hm LCTRL F   &kp G                 &kp H       &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
+	&kp Z     &kp X &kp C       &kp V         &kp B                 &kp N       &kp M        &kp COMMA   &kp DOT &kp MINUS
+	                            &hm MEH SPACE &kp LSHIFT            &to SYMBOLS &kp RET
 			>;
 		};
 
