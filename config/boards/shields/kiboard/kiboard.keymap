@@ -17,6 +17,7 @@
 #define NAV 3
 #define SYMBOLS2 4
 #define BT 5
+#define NUM2 6
 
 // Helpers
 #define MEH LC(LS(LALT))
@@ -61,10 +62,10 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 			bindings = <
-	&kp Q     &kp W &kp E       &kp R         &kp T                 &kp Y       &kp U        &kp I       &kp O   &kp P   
-	&lt NAV A &kp S &hm LMETA D &hm LCTRL F   &kp G                 &kp H       &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
-	&kp Z     &kp X &kp C       &kp V         &kp B                 &kp N       &kp M        &kp COMMA   &kp DOT &kp MINUS
-	                            &hm MEH SPACE &kp LSHIFT            &to SYMBOLS &kp RET
+	&kp Q       &kp W &kp E       &kp R         &kp T                 &kp Y       &kp U        &kp I       &kp O   &kp P   
+	&lt NAV A   &kp S &hm LMETA D &hm LCTRL F   &kp G                 &kp H       &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
+	&lt NUM2 Z  &kp X &kp C       &kp V         &kp B                 &kp N       &kp M        &kp COMMA   &kp DOT &kp MINUS
+	                              &hm MEH SPACE &kp LSHIFT            &to SYMBOLS &kp RET
 			>;
 		};
 
@@ -110,6 +111,15 @@
 	&none            &none                &none            &none      &none              &none       &bt BT_PRV     &bt BT_NXT   &none     &none
 	&none            &none                &none            &none      &none              &none       &none          &none        &none     &none
 	                                                       &none      &to DEFAULT        &to NUMBERS &none
+			>;
+	};
+
+    num2_layer {
+			bindings = <
+	&none     &none         &none     &none      &none                &kp N1   &kp N2  &kp N3  &none    &none   
+	&none     &none         &none     &none      &none                &kp N4   &kp N5  &kp N6  &none    &none
+	&none     &none         &none     &none      &none                &kp N7   &kp N8  &kp N9  &kp DOT  &none
+	                                  &none      &to DEFAULT          &none    &kp N0
 			>;
 	};
 	};
