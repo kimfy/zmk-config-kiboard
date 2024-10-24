@@ -72,8 +72,8 @@
     symbols_layer {
 			bindings = <
 	&kp ESC   &kp AT    &kp LBRC        &kp RBRC       &kp PIPE            &kp SQT       &kp BSLH        &kp EQUAL      &kp QMARK &kp P   
-	&kp TAB   &kp DLLR  &hm LSHIFT LPAR &hm LCTRL RPAR &kp GRAVE           &kp ASTERISK  &hm LCTRL SLASH &hm LSHIFT DQT &kp BSPC  &mo SYMBOLS2
-	&kp PRCNT &kp CARET &kp LBKT        &kp RBKT       &kp TILDE           &kp PLUS      &kp HASH        &kp SEMI       &kp COLON &kp UNDER
+	&kp TAB   &kp DLLR  &hm LSHIFT LPAR &hm LCTRL RPAR &kp GRAVE           &kp PLUS      &hm LCTRL SLASH &hm LSHIFT DQT &kp BSPC  &mo SYMBOLS2
+	&kp PRCNT &kp CARET &kp LBKT        &kp RBKT       &kp TILDE           &kp ASTERISK  &kp HASH        &kp SEMI       &kp COLON &kp UNDER
 	                                    &hm MEH SPACE  &to DEFAULT         &to NUMBERS   &kp LMETA
 			>;
     };
@@ -116,9 +116,9 @@
 
     num2_layer {
 			bindings = <
-	&none     &none         &none     &none      &none                &kp N1   &kp N2  &kp N3  &none    &none   
-	&none     &none         &none     &none      &none                &kp N4   &kp N5  &kp N6  &none    &none
-	&none     &none         &none     &none      &none                &kp N7   &kp N8  &kp N9  &kp DOT  &none
+	&none     &none         &none     &none      &none                &none        &kp N1   &kp N2  &kp N3  &none
+	&none     &none         &none     &none      &none                &kp PLUS     &kp N4   &kp N5  &kp N6  &none
+	&none     &none         &none     &none      &none                &kp ASTERIX  &kp N7   &kp N8  &kp N9  &kp DOT
 	                                  &none      &to DEFAULT          &none    &kp N0
 			>;
 	};
