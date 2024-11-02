@@ -17,6 +17,7 @@
 #define NAV 3
 #define SYMBOLS2 4
 #define BT 5
+#define NUM2 6
 
 // Helpers
 #define MEH LC(LS(LALT))
@@ -61,18 +62,18 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 
 			bindings = <
-	&kp Q             &kp W &kp E       &kp R         &kp T                 &kp Y       &kp U        &kp I       &kp O   &kp P   
-	&lt NAV A         &kp S &hm LMETA D &hm LCTRL F   &kp G                 &kp H       &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
-	&lt NUMBERS Z     &kp X &kp C       &kp V         &kp B                 &kp N       &kp M        &kp COMMA   &kp DOT &kp MINUS
-	                                    &hm MEH SPACE &kp LSHIFT            &to SYMBOLS &kp RET
+	&kp Q       &kp W &kp E       &kp R         &kp T                 &kp Y       &kp U        &kp I       &kp O   &kp P   
+	&lt NAV A   &kp S &hm LMETA D &hm LCTRL F   &kp G                 &kp H       &hm LCTRL J  &hm LMETA K &kp L   &mo SYMBOLS2
+	&lt NUM2 Z  &kp X &kp C       &kp V         &kp B                 &kp N       &kp M        &kp COMMA   &kp DOT &kp MINUS
+	                              &hm MEH SPACE &kp LSHIFT            &to SYMBOLS &kp RET
 			>;
 		};
 
     symbols_layer {
 			bindings = <
 	&kp ESC   &kp AT    &kp LBRC        &kp RBRC       &kp PIPE            &kp SQT       &kp BSLH        &kp EQUAL      &kp QMARK &kp P   
-	&kp TAB   &kp DLLR  &hm LSHIFT LPAR &hm LCTRL RPAR &kp GRAVE           &kp ASTERISK  &hm LCTRL SLASH &hm LSHIFT DQT &kp BSPC  &mo SYMBOLS2
-	&kp PRCNT &kp CARET &kp LBKT        &kp RBKT       &kp TILDE           &kp PLUS      &kp HASH        &kp SEMI       &kp COLON &kp UNDER
+	&kp TAB   &kp DLLR  &hm LSHIFT LPAR &hm LCTRL RPAR &kp GRAVE           &kp PLUS      &hm LCTRL SLASH &hm LSHIFT DQT &kp BSPC  &mo SYMBOLS2
+	&kp PRCNT &kp CARET &kp LBKT        &kp RBKT       &kp TILDE           &kp ASTERISK  &kp HASH        &kp SEMI       &kp COLON &kp UNDER
 	                                    &hm MEH SPACE  &to DEFAULT         &to NUMBERS   &kp LMETA
 			>;
     };
@@ -106,10 +107,19 @@
 
     bt_layer {
 			bindings = <
-	&bt BT_SEL 0     &bt BT_SEL 1         &bt BT_SEL 2     &none      &none              &bt BT_CLR  &none          &none        &none     &none   
-	&none            &none                &none            &none      &none              &none       &bt BT_PRV     &bt BT_NXT   &none     &none
-	&none            &none                &none            &none      &none              &none       &none          &none        &none     &none
-	                                                       &none      &to DEFAULT        &to NUMBERS &none
+	&bt BT_SEL 0     &bt BT_SEL 1         &bt BT_SEL 2     &none      &none               &bt BT_CLR  &none          &none        &none     &none   
+	&none            &none                &none            &none      &none               &none       &bt BT_PRV     &bt BT_NXT   &none     &none
+	&none            &none                &none            &none      &none               &none       &none          &none        &none     &none
+	                                                       &none      &to DEFAULT         &to NUMBERS &none
+			>;
+	};
+
+    num2_layer {
+			bindings = <
+	&none            &none                &none            &none      &none               &none           &kp N1   &kp N2  &kp N3  &none
+	&none            &none                &none            &none      &none               &kp ASTERISK    &kp N4   &kp N5  &kp N6  &none
+	&none            &none                &none            &none      &none               &kp PLUS        &kp N7   &kp N8  &kp N9  &kp DOT
+	                                                       &none      &to DEFAULT         &none           &kp N0
 			>;
 	};
 	};
